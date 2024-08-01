@@ -1,0 +1,41 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>A rotating fan</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="fan.css">
+        </head>
+        <body>
+            <div class="fan-space">
+                <div class="power-container">
+                    <div >Battery level <span id="fan-battery">50%</span></div>
+                    <div >Charge bar <span id="bar-charge">50%</span></div>
+                </div>
+                <div class="fan" id="FAN">
+                    <div class="center"></div>
+                    <div class="wing"></div>
+                    <div class="wing"></div>
+                    <div class="wing"></div>
+                    <div class="wing"></div>
+                </div>
+
+                <div class="btn-container">
+                    <div class="start-btn">
+                        <button id="startUp-btn">Start Fan</button>
+                    </div>
+                    <div class="btn-pc">
+                        <button type="button" id="power-btn" class=" btn hide">Power</button>
+                        <button type="button" id="charge-btn" class=" btn hide">Charge</button>
+                    </div>
+                </div>
+
+            <div class="text">
+              <label for="text-input">Instruction:</label>
+                <p id="text-input" value="instructions">~Click the <strong>Start button</strong>
+                    to start up the <em>fan</em>
+                </p>
+            </div>
+            </div>
+            <script src="./fan.js"></script>
+        </body>
+    </html>
